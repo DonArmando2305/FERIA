@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>FERIA-PROYECTO</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#artesanias">Categorias</a></li>
+        <li><a href="#registro">Registro</a></li>
+      </ul>
+    </nav>
+
+    <section id="about" class="about">
+      <div class="item about-bg"></div>
+      <div class="item about-texto">
+        <h1>Feria de emprendimiento</h1>
+        <p>
+          Un espacio diseñado para impulsar la innovación y el talento local. Si
+          tienes una idea de negocio y quieres darla a conocer, te invitamos a
+          registrarte como expositor. podrás inscribir tu proyecto en nuestras
+          diferentes catergorias destacadas, como Tecnología, Artesanias y Moda.
+        </p>
+      </div>
+    </section>
+
+    <section id="artesanias" class="categorias artesanias sticky">
+      <article>
+        <figure></figure>
+        <div class="texto">
+          <h2>Artesanias</h2>
+          <p>
+            Celebramos el talento hecho a mano y el valor de nuestras
+            tradiciones . Si tu pasión es crear piezas únicas, desde joyería y
+            artículos de cuero hasta decoración y cerámica, esta es tu
+            categoría. Inscribe tu nombre y comparte la magia del arte local con
+            todos los asistentes de nuestra feria.
+          </p>
+          <a
+            href="https://henaresaldia.com/la-importancia-la-artesania/"
+            target="_blank"
+            >Mas informacion sobre la categoria</a
+          >
+        </div>
+      </article>
+    </section>
+
+    <section id="tecnologia" class="categorias tecnologia sticky">
+      <article>
+        <figure></figure>
+        <div class="texto">
+          <h2>Tecnología</h2>
+          <p>
+            ¿Tu emprendimiento esta revolucionando el mundo digital? Esta
+            categoría es el espacio ideal para proyectos de software,
+            aplicaciones móviles, inteligencia artificial, robótica y soluciones
+            de hardware. ¡Muestra cómo tu innovación tecnológica puede mejorar
+            nuestro día a día! (Apresúrate, solo habilitamos 5 cupos para los
+            proyectos más innovadores).
+          </p>
+          <a
+            href="https://colombia.generation.org/news/el-rol-de-la-tecnologia-en-el-fortalecimiento-de-la-movilidad-economica/?utm_source=GoogleAds&utm_campaign=GA_AG_2B_CO____&urlRecruitmentChannel=GA_AG_2B_CO____&gad_source=1&gad_campaignid=20187013663&gbraid=0AAAAApT1yXmWVTrrF9iqtIwibuVWtVgaX"
+            target="_blank"
+            >Mas informacion sobre la categoria</a
+          >
+        </div>
+      </article>
+    </section>
+
+    <section id="moda" class="categorias moda sticky">
+      <article>
+        <figure></figure>
+        <div class="texto">
+          <h2>Moda</h2>
+          <p>
+            Diseñada para los creadores de tendencias y diseñadores
+            independientes. Si tienes una marca de ropa, calzado, accesorios o
+            te dedicas a la moda sostenible, este es el escenario perfecto para
+            exhibir tu estilo. ¡Registra tu marca y únete a los 5
+            emprendimientos que marcarán la tendencia en este evento!
+          </p>
+          <a
+            href="https://slowfashionnext.com/blog/la-importancia-de-la-moda-como-herramienta-para-mejorar-la-vida-de-las-personas/"
+            >Mas informacion sobre la categoria</a
+          >
+        </div>
+      </article>
+    </section>
+
+    <section id="registro" class="formulario full-screen">
+      <div class="formulario-filtro-bg">
+        <div class="formulario-contenedor">
+          <h2>Registro para la feria de Emprendedores</h2>
+          <form class="formularioFeria">
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Ingrese su nombre"
+              required
+            />
+            <input
+              type="email"
+              id="correo"
+              placeholder="Ingrese su correo"
+              required
+            />
+            <input
+              type="text"
+              id="nombre_emprendimiento"
+              placeholder="Nombre de su emprendimiento"
+              required
+            />
+
+            <select id="categoria" required>
+              <option value="">Seleciona una categoria</option>
+              <option value="Tecnología">Tecnología</option>
+              <option value="Artesanias">Artesanias</option>
+              <option value="Moda">Moda</option>
+            </select>
+
+            <button type="submit">Registrar</button>
+            <!--!Mensaje que devuelve el backend-->
+            <h3 id="mensajeRespuesta"></h3>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
